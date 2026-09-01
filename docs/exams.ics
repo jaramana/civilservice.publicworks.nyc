@@ -14,6 +14,48 @@ REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 SOURCE;VALUE=URI:https://civilservice.publicworks.nyc/exams.ics
 BEGIN:VEVENT
+UID:exam-7006-2027-open@civilservice.publicworks.nyc
+DTSTAMP:20260722T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260702
+SUMMARY:Applications open: Assistant Civil Engineer (Exam 7006)
+DESCRIPTION:Applications open for Assistant Civil Engineer\, Exam 7006.\nAp
+ plication period: 2026-07-01 to 2026-09-11.\nApply through OASys: https://
+ www.nyc.gov/examsforjobs\nNotice of Examination: https://www.nyc.gov/asset
+ s/dcas/downloads/pdf/noes/20277006000.pdf\nExam details: https://civilserv
+ ice.publicworks.nyc/exam.html?exam=7006\nDates come from DCAS and can be e
+ xtended. Confirm on nyc.gov before relying on this.
+URL:https://civilservice.publicworks.nyc/exam.html?exam=7006
+CATEGORIES:NYC Civil Service Exams
+SEQUENCE:2394
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:exam-7006-2027-close@civilservice.publicworks.nyc
+DTSTAMP:20260722T000000Z
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:Last day to apply: Assistant Civil Engineer (Exam 7006)
+DESCRIPTION:Today is the last day to apply for Assistant Civil Engineer\, E
+ xam 7006.\nApplication period: 2026-07-01 to 2026-09-11.\nApply through OA
+ Sys: https://www.nyc.gov/examsforjobs\nNotice of Examination: https://www.
+ nyc.gov/assets/dcas/downloads/pdf/noes/20277006000.pdf\nExam details: http
+ s://civilservice.publicworks.nyc/exam.html?exam=7006\nDates come from DCAS
+  and can be extended. Confirm on nyc.gov before relying on this.
+URL:https://civilservice.publicworks.nyc/exam.html?exam=7006
+CATEGORIES:NYC Civil Service Exams
+SEQUENCE:2394
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-P3D
+DESCRIPTION:Assistant Civil Engineer (Exam 7006) closes in 3 days. Apply at
+  https://www.nyc.gov/examsforjobs
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:exam-7522-2027-open@civilservice.publicworks.nyc
 DTSTAMP:20260722T000000Z
 DTSTART;VALUE=DATE:20260805
@@ -112,9 +154,10 @@ DTEND;VALUE=DATE:20260902
 SUMMARY:Applications open: Police Officer (Exam 7313)
 DESCRIPTION:Applications open for Police Officer\, Exam 7313.\nApplication 
  period: 2026-09-01 to 2026-09-14.\nApply through OASys: https://www.nyc.go
- v/examsforjobs\nExam details: https://civilservice.publicworks.nyc/exam.ht
- ml?exam=7313\nDates come from DCAS and can be extended. Confirm on nyc.gov
-  before relying on this.
+ v/examsforjobs\nNotice of Examination: https://www.nyc.gov/assets/dcas/dow
+ nloads/pdf/noes/20277313000.pdf\nExam details: https://civilservice.public
+ works.nyc/exam.html?exam=7313\nDates come from DCAS and can be extended. C
+ onfirm on nyc.gov before relying on this.
 URL:https://civilservice.publicworks.nyc/exam.html?exam=7313
 CATEGORIES:NYC Civil Service Exams
 SEQUENCE:2394
@@ -129,9 +172,10 @@ DTEND;VALUE=DATE:20260915
 SUMMARY:Last day to apply: Police Officer (Exam 7313)
 DESCRIPTION:Today is the last day to apply for Police Officer\, Exam 7313.\
  nApplication period: 2026-09-01 to 2026-09-14.\nApply through OASys: https
- ://www.nyc.gov/examsforjobs\nExam details: https://civilservice.publicwork
- s.nyc/exam.html?exam=7313\nDates come from DCAS and can be extended. Confi
- rm on nyc.gov before relying on this.
+ ://www.nyc.gov/examsforjobs\nNotice of Examination: https://www.nyc.gov/as
+ sets/dcas/downloads/pdf/noes/20277313000.pdf\nExam details: https://civils
+ ervice.publicworks.nyc/exam.html?exam=7313\nDates come from DCAS and can b
+ e extended. Confirm on nyc.gov before relying on this.
 URL:https://civilservice.publicworks.nyc/exam.html?exam=7313
 CATEGORIES:NYC Civil Service Exams
 SEQUENCE:2394
