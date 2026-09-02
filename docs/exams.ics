@@ -324,9 +324,10 @@ SUMMARY:Applications open: Administrative Labor Relations Analyst (Prom) (E
  xam 7502)
 DESCRIPTION:Applications open for Administrative Labor Relations Analyst (P
  rom)\, Exam 7502.\nApplication period: 2026-09-02 to 2026-09-22.\nApply th
- rough OASys: https://www.nyc.gov/examsforjobs\nExam details: https://civil
- service.publicworks.nyc/exam.html?exam=7502\nDates come from DCAS and can 
- be extended. Confirm on nyc.gov before relying on this.
+ rough OASys: https://www.nyc.gov/examsforjobs\nNotice of Examination: http
+ s://www.nyc.gov/assets/dcas/downloads/pdf/noes/20277502000.pdf\nExam detai
+ ls: https://civilservice.publicworks.nyc/exam.html?exam=7502\nDates come f
+ rom DCAS and can be extended. Confirm on nyc.gov before relying on this.
 URL:https://civilservice.publicworks.nyc/exam.html?exam=7502
 CATEGORIES:NYC Civil Service Exams
 SEQUENCE:2394
@@ -342,9 +343,11 @@ SUMMARY:Last day to apply: Administrative Labor Relations Analyst (Prom) (E
  xam 7502)
 DESCRIPTION:Today is the last day to apply for Administrative Labor Relatio
  ns Analyst (Prom)\, Exam 7502.\nApplication period: 2026-09-02 to 2026-09-
- 22.\nApply through OASys: https://www.nyc.gov/examsforjobs\nExam details: 
- https://civilservice.publicworks.nyc/exam.html?exam=7502\nDates come from 
- DCAS and can be extended. Confirm on nyc.gov before relying on this.
+ 22.\nApply through OASys: https://www.nyc.gov/examsforjobs\nNotice of Exam
+ ination: https://www.nyc.gov/assets/dcas/downloads/pdf/noes/20277502000.pd
+ f\nExam details: https://civilservice.publicworks.nyc/exam.html?exam=7502\
+ nDates come from DCAS and can be extended. Confirm on nyc.gov before relyi
+ ng on this.
 URL:https://civilservice.publicworks.nyc/exam.html?exam=7502
 CATEGORIES:NYC Civil Service Exams
 SEQUENCE:2394
@@ -366,9 +369,10 @@ SUMMARY:Applications open: Area Supervisor (Highway Maintenance) (Prom) (Ex
  am 7507)
 DESCRIPTION:Applications open for Area Supervisor (Highway Maintenance) (Pr
  om)\, Exam 7507.\nApplication period: 2026-09-02 to 2026-09-22.\nApply thr
- ough OASys: https://www.nyc.gov/examsforjobs\nExam details: https://civils
- ervice.publicworks.nyc/exam.html?exam=7507\nDates come from DCAS and can b
- e extended. Confirm on nyc.gov before relying on this.
+ ough OASys: https://www.nyc.gov/examsforjobs\nNotice of Examination: https
+ ://www.nyc.gov/assets/dcas/downloads/pdf/noes/20277507000.pdf\nExam detail
+ s: https://civilservice.publicworks.nyc/exam.html?exam=7507\nDates come fr
+ om DCAS and can be extended. Confirm on nyc.gov before relying on this.
 URL:https://civilservice.publicworks.nyc/exam.html?exam=7507
 CATEGORIES:NYC Civil Service Exams
 SEQUENCE:2394
@@ -384,9 +388,11 @@ SUMMARY:Last day to apply: Area Supervisor (Highway Maintenance) (Prom) (Ex
  am 7507)
 DESCRIPTION:Today is the last day to apply for Area Supervisor (Highway Mai
  ntenance) (Prom)\, Exam 7507.\nApplication period: 2026-09-02 to 2026-09-2
- 2.\nApply through OASys: https://www.nyc.gov/examsforjobs\nExam details: h
- ttps://civilservice.publicworks.nyc/exam.html?exam=7507\nDates come from D
- CAS and can be extended. Confirm on nyc.gov before relying on this.
+ 2.\nApply through OASys: https://www.nyc.gov/examsforjobs\nNotice of Exami
+ nation: https://www.nyc.gov/assets/dcas/downloads/pdf/noes/20277507000.pdf
+ \nExam details: https://civilservice.publicworks.nyc/exam.html?exam=7507\n
+ Dates come from DCAS and can be extended. Confirm on nyc.gov before relyin
+ g on this.
 URL:https://civilservice.publicworks.nyc/exam.html?exam=7507
 CATEGORIES:NYC Civil Service Exams
 SEQUENCE:2394
@@ -397,6 +403,51 @@ ACTION:DISPLAY
 TRIGGER;RELATED=START:-P3D
 DESCRIPTION:Area Supervisor (Highway Maintenance) (Prom) (Exam 7507) closes
   in 3 days. Apply at https://www.nyc.gov/examsforjobs
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:exam-7509-2027-open@civilservice.publicworks.nyc
+DTSTAMP:20260722T000000Z
+DTSTART;VALUE=DATE:20260902
+DTEND;VALUE=DATE:20260903
+SUMMARY:Applications open: Associate Supervisor of School Security (Prom) (
+ Exam 7509)
+DESCRIPTION:Applications open for Associate Supervisor of School Security (
+ Prom)\, Exam 7509.\nApplication period: 2026-09-02 to 2026-09-22.\nApply t
+ hrough OASys: https://www.nyc.gov/examsforjobs\nNotice of Examination: htt
+ ps://www.nyc.gov/assets/dcas/downloads/pdf/noes/20277509000.pdf\nExam deta
+ ils: https://civilservice.publicworks.nyc/exam.html?exam=7509\nDates come 
+ from DCAS and can be extended. Confirm on nyc.gov before relying on this.
+URL:https://civilservice.publicworks.nyc/exam.html?exam=7509
+CATEGORIES:NYC Civil Service Exams
+SEQUENCE:2394
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:exam-7509-2027-close@civilservice.publicworks.nyc
+DTSTAMP:20260722T000000Z
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20260923
+SUMMARY:Last day to apply: Associate Supervisor of School Security (Prom) (
+ Exam 7509)
+DESCRIPTION:Today is the last day to apply for Associate Supervisor of Scho
+ ol Security (Prom)\, Exam 7509.\nApplication period: 2026-09-02 to 2026-09
+ -22.\nApply through OASys: https://www.nyc.gov/examsforjobs\nNotice of Exa
+ mination: https://www.nyc.gov/assets/dcas/downloads/pdf/noes/20277509000.p
+ df\nExam details: https://civilservice.publicworks.nyc/exam.html?exam=7509
+ \nDates come from DCAS and can be extended. Confirm on nyc.gov before rely
+ ing on this.
+URL:https://civilservice.publicworks.nyc/exam.html?exam=7509
+CATEGORIES:NYC Civil Service Exams
+SEQUENCE:2394
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-P3D
+DESCRIPTION:Associate Supervisor of School Security (Prom) (Exam 7509) clos
+ es in 3 days. Apply at https://www.nyc.gov/examsforjobs
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -767,9 +818,10 @@ DTEND;VALUE=DATE:20260903
 SUMMARY:Applications open: Supervisor Plasterer (Prom) (Exam 7539)
 DESCRIPTION:Applications open for Supervisor Plasterer (Prom)\, Exam 7539.\
  nApplication period: 2026-09-02 to 2026-09-22.\nApply through OASys: https
- ://www.nyc.gov/examsforjobs\nExam details: https://civilservice.publicwork
- s.nyc/exam.html?exam=7539\nDates come from DCAS and can be extended. Confi
- rm on nyc.gov before relying on this.
+ ://www.nyc.gov/examsforjobs\nNotice of Examination: https://www.nyc.gov/as
+ sets/dcas/downloads/pdf/noes/20277539000.pdf\nExam details: https://civils
+ ervice.publicworks.nyc/exam.html?exam=7539\nDates come from DCAS and can b
+ e extended. Confirm on nyc.gov before relying on this.
 URL:https://civilservice.publicworks.nyc/exam.html?exam=7539
 CATEGORIES:NYC Civil Service Exams
 SEQUENCE:2394
@@ -784,9 +836,10 @@ DTEND;VALUE=DATE:20260923
 SUMMARY:Last day to apply: Supervisor Plasterer (Prom) (Exam 7539)
 DESCRIPTION:Today is the last day to apply for Supervisor Plasterer (Prom)\
  , Exam 7539.\nApplication period: 2026-09-02 to 2026-09-22.\nApply through
-  OASys: https://www.nyc.gov/examsforjobs\nExam details: https://civilservi
- ce.publicworks.nyc/exam.html?exam=7539\nDates come from DCAS and can be ex
- tended. Confirm on nyc.gov before relying on this.
+  OASys: https://www.nyc.gov/examsforjobs\nNotice of Examination: https://w
+ ww.nyc.gov/assets/dcas/downloads/pdf/noes/20277539000.pdf\nExam details: h
+ ttps://civilservice.publicworks.nyc/exam.html?exam=7539\nDates come from D
+ CAS and can be extended. Confirm on nyc.gov before relying on this.
 URL:https://civilservice.publicworks.nyc/exam.html?exam=7539
 CATEGORIES:NYC Civil Service Exams
 SEQUENCE:2394
