@@ -20,10 +20,11 @@ DTSTART;VALUE=DATE:20260902
 DTEND;VALUE=DATE:20260903
 SUMMARY:Applications open: Police Communications Technician (Exam 7307)
 DESCRIPTION:Applications open for Police Communications Technician\, Exam 7
- 307.\nApplication period: 2026-09-02 to 2026-09-22.\nApply through OASys: 
- https://www.nyc.gov/examsforjobs\nExam details: https://civilservice.publi
- cworks.nyc/exam.html?exam=7307\nDates come from DCAS and can be extended. 
- Confirm on nyc.gov before relying on this.
+ 307.\nApplication period: 2026-09-02 to 2026-10-13.\nApply through OASys: 
+ https://www.nyc.gov/examsforjobs\nNotice of Examination: https://www.nyc.g
+ ov/assets/dcas/downloads/pdf/noes/20277307000.pdf\nExam details: https://c
+ ivilservice.publicworks.nyc/exam.html?exam=7307\nDates come from DCAS and 
+ can be extended. Confirm on nyc.gov before relying on this.
 URL:https://civilservice.publicworks.nyc/exam.html?exam=7307
 CATEGORIES:NYC Civil Service Exams
 SEQUENCE:2394
@@ -33,14 +34,15 @@ END:VEVENT
 BEGIN:VEVENT
 UID:exam-7307-2027-close@civilservice.publicworks.nyc
 DTSTAMP:20260722T000000Z
-DTSTART;VALUE=DATE:20260922
-DTEND;VALUE=DATE:20260923
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
 SUMMARY:Last day to apply: Police Communications Technician (Exam 7307)
 DESCRIPTION:Today is the last day to apply for Police Communications Techni
- cian\, Exam 7307.\nApplication period: 2026-09-02 to 2026-09-22.\nApply th
- rough OASys: https://www.nyc.gov/examsforjobs\nExam details: https://civil
- service.publicworks.nyc/exam.html?exam=7307\nDates come from DCAS and can 
- be extended. Confirm on nyc.gov before relying on this.
+ cian\, Exam 7307.\nApplication period: 2026-09-02 to 2026-10-13.\nApply th
+ rough OASys: https://www.nyc.gov/examsforjobs\nNotice of Examination: http
+ s://www.nyc.gov/assets/dcas/downloads/pdf/noes/20277307000.pdf\nExam detai
+ ls: https://civilservice.publicworks.nyc/exam.html?exam=7307\nDates come f
+ rom DCAS and can be extended. Confirm on nyc.gov before relying on this.
 URL:https://civilservice.publicworks.nyc/exam.html?exam=7307
 CATEGORIES:NYC Civil Service Exams
 SEQUENCE:2394
