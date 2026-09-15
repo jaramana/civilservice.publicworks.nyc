@@ -105,48 +105,6 @@ DESCRIPTION:Plant Maintainer (Hospitals)/Tender (NYC H+H) (Exam 7070) close
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:exam-7313-2027-open@civilservice.publicworks.nyc
-DTSTAMP:20260722T000000Z
-DTSTART;VALUE=DATE:20260901
-DTEND;VALUE=DATE:20260902
-SUMMARY:Applications open: Police Officer (Exam 7313)
-DESCRIPTION:Applications open for Police Officer\, Exam 7313.\nApplication 
- period: 2026-09-01 to 2026-09-14.\nApply through OASys: https://www.nyc.go
- v/examsforjobs\nNotice of Examination: https://www.nyc.gov/assets/dcas/dow
- nloads/pdf/noes/20277313000.pdf\nExam details: https://civilservice.public
- works.nyc/exam.html?exam=7313\nDates come from DCAS and can be extended. C
- onfirm on nyc.gov before relying on this.
-URL:https://civilservice.publicworks.nyc/exam.html?exam=7313
-CATEGORIES:NYC Civil Service Exams
-SEQUENCE:2394
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:exam-7313-2027-close@civilservice.publicworks.nyc
-DTSTAMP:20260722T000000Z
-DTSTART;VALUE=DATE:20260914
-DTEND;VALUE=DATE:20260915
-SUMMARY:Last day to apply: Police Officer (Exam 7313)
-DESCRIPTION:Today is the last day to apply for Police Officer\, Exam 7313.\
- nApplication period: 2026-09-01 to 2026-09-14.\nApply through OASys: https
- ://www.nyc.gov/examsforjobs\nNotice of Examination: https://www.nyc.gov/as
- sets/dcas/downloads/pdf/noes/20277313000.pdf\nExam details: https://civils
- ervice.publicworks.nyc/exam.html?exam=7313\nDates come from DCAS and can b
- e extended. Confirm on nyc.gov before relying on this.
-URL:https://civilservice.publicworks.nyc/exam.html?exam=7313
-CATEGORIES:NYC Civil Service Exams
-SEQUENCE:2394
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-P3D
-DESCRIPTION:Police Officer (Exam 7313) closes in 3 days. Apply at https://w
- ww.nyc.gov/examsforjobs
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:exam-7002-2027-open@civilservice.publicworks.nyc
 DTSTAMP:20260722T000000Z
 DTSTART;VALUE=DATE:20260902
