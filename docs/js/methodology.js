@@ -1,9 +1,9 @@
 /* ==========================================================================
-   About the data.
+   About page.
 
    The prose on this page is hand-written, but the source list and the field
-   dictionary are drawn from the data files themselves. A methodology page that
-   is maintained by hand goes stale quietly, and a stale methodology page is
+   dictionary are drawn from the data files themselves. A page that
+   is maintained by hand goes stale quietly, and a stale page is
    worse than none: it describes a site that no longer exists.
    ========================================================================== */
 

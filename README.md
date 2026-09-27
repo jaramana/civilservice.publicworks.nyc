@@ -30,7 +30,7 @@ exam is open, coming soon or closed, and what a job title pays.
   requirements. Calendar files give reminders on a subscriber's device without
   collecting an email address.
 
-The [methodology page](https://civilservice.publicworks.nyc/methodology.html)
+The [About page](https://civilservice.publicworks.nyc/methodology.html)
 defines the fields and limits. Confirm an exam date on
 [NYC.gov](https://www.nyc.gov/examsforjobs) before relying on it.
 
@@ -48,7 +48,8 @@ validation thresholds are in `config.py`.
 
 ## Tools
 
-Data pipeline: Python, `pandas` and `requests`. Site: HTML, CSS and JavaScript.
+Data pipeline: Python, `pandas` and `requests` prepare the data and calendar
+files. Website: static HTML, CSS and JavaScript, served from GitHub Pages.
 Claude was used in development.
 
 ## License and reuse

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About the data | NYC Civil Service Exams</title>
-<meta name="description" content="Where this site's numbers come from, what they mean, and what they cannot tell you.">
+<title>About | NYC Civil Service Exams</title>
+<meta name="description" content="Why this site exists, how it is built, and how to read its published data.">
 <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
@@ -21,27 +21,60 @@
       <a href="index.html">Exams</a>
       <a href="titles.html">Job titles</a>
       <a href="how-to-apply.html">How to apply</a>
-      <a href="methodology.html">About the data</a>
+      <a href="methodology.html">About</a>
     </nav>
   </header>
 
   <main id="main">
 
-    <h1 class="page-title">About the data</h1>
+    <h1 class="page-title">About</h1>
     <p class="smallprint data-status" id="asof"></p>
 
-    <div class="prose">
-      <p>
-        Everything here comes from data the City of New York (the City)
-        publishes, plus pages from the Department of Citywide Administrative
-        Services (DCAS), the agency that runs civil service exams. No numbers
-        on this site are estimated or guessed. If a field is missing, we
-        leave it out.
-      </p>
-    </div>
+    <section class="section">
+      <h2>Why</h2>
+      <div class="prose"><p>The City publishes exam schedules, civil service
+      lists and title salaries separately. This site brings them together so
+      readers can check application periods and published pay in one place.</p></div>
+    </section>
 
     <section class="section">
-      <h2>What this cannot tell you</h2>
+      <h2>Scope</h2>
+      <div class="prose"><p>The site shows published exam dates, active lists
+      and title salaries. Open, coming-soon and closed labels are calculated
+      from application dates. No numbers are estimated. Missing fields are
+      left out. Confirm a date on <a href="https://www.nyc.gov/examsforjobs">NYC.gov</a>
+      before relying on it.</p></div>
+    </section>
+
+    <section class="section">
+      <h2>Built</h2>
+      <div class="prose"><p>Python, pandas and requests prepare the data and
+      calendar files. The website uses static HTML, CSS and JavaScript, served
+      from GitHub Pages.</p></div>
+    </section>
+
+    <section class="section">
+      <h2>Independence</h2>
+      <div class="prose"><p>No agency reviewed this site.</p></div>
+    </section>
+
+    <section class="section">
+      <h2>Credits</h2>
+      <div class="prose"><p>Data from NYC Open Data and the Department of
+      Citywide Administrative Services (DCAS) exam pages. Median pay context
+      comes from <a href="https://paygap.publicworks.nyc/">The Pay Gap</a>.
+      Claude was used in development.</p></div>
+    </section>
+
+    <section class="section">
+      <h2>Reuse</h2>
+      <div class="prose"><p>Code is BSD 3-Clause licensed. Generated data and
+      calendar files can be reused with attribution; NYC Open Data and DCAS
+      source material retain their own terms.</p></div>
+    </section>
+
+    <section class="section">
+      <h2>Data limits</h2>
       <div class="prose">
         <p>
           <strong>Whether you will be hired.</strong> No published data shows
@@ -103,12 +136,12 @@
     </section>
 
     <section class="section">
-      <h2>Where it comes from <span class="count" id="sources-count"></span></h2>
+      <h2>Sources <span class="count" id="sources-count"></span></h2>
       <dl class="facts" id="sources"></dl>
     </section>
 
     <section class="section">
-      <h2>How often it updates</h2>
+      <h2>Updates</h2>
       <div class="prose">
         <p id="refresh-line">
           A scheduled job runs the pipeline once a day. It rebuilds the files
@@ -130,7 +163,7 @@
     </section>
 
     <section class="section">
-      <h2>Every published field</h2>
+      <h2>Field guide</h2>
       <p class="note">
         What each field in the data means. This list comes straight from the
         pipeline, so it cannot drift from what the site actually publishes.
@@ -138,19 +171,26 @@
       <dl class="facts" id="dictionary"></dl>
     </section>
 
+    <section class="section">
+      <h2>Contact</h2>
+      <div class="prose"><p>If you find an error,
+      <a href="https://github.com/jaramana/civilservice.publicworks.nyc/issues">open an issue</a>.</p></div>
+    </section>
+
   </main>
 
 </div>
 
   <footer class="foot">
-    <p>
-      Built from <a href="https://opendata.cityofnewyork.us/">NYC OpenData</a>
-      and the DCAS exam pages. Not affiliated with the City of New York. Dates
-      can change: confirm on
-      <a href="https://www.nyc.gov/examsforjobs">nyc.gov</a> before you rely on one.
+    <p class="disclaimer">
+      <strong>This is not an official product.</strong> It is an independent
+      initiative, not affiliated with, endorsed by, or produced by
+      <a href="https://www.nyc.gov/examsforjobs">the Department of Citywide
+      Administrative Services</a> or the City of New York. Please refer to
+      them for authoritative information.
     </p>
     <p>
-      <a href="methodology.html">About the data</a> ·
+      <a href="methodology.html">About</a> ·
       <a href="https://github.com/jaramana/civilservice.publicworks.nyc">Source code</a>
     </p>
     <p class="portfolio">A <a href="https://publicworks.nyc/">publicworks.nyc</a> project.</p>
