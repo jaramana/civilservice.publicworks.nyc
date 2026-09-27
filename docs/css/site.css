@@ -399,7 +399,7 @@ h1.page-title {
    7. Freshness and warnings
    -------------------------------------------------------------------------- */
 
-/* Small mono line: the freshness note in the footer, an exam number, a title
+/* Small mono line: the source dates, an exam number, a title
    code. A look, not a meaning, so it is named for what it is. */
 .smallprint {
   font-family: var(--face-mono);
@@ -407,6 +407,7 @@ h1.page-title {
   color: var(--ink-faint);
   margin: 0.9rem 0;
 }
+.data-status { margin: 0.3rem 0 1.25rem; }
 
 .banner {
   border: 2px solid var(--warn);
@@ -669,6 +670,13 @@ input[type="search"]:focus, select:focus { border-color: var(--focus); }
    content above instead. */
 .foot p { margin: 0 0 0.5rem; max-width: none; }
 .foot p:last-child { margin-bottom: 0; }
+.foot .portfolio {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  font-size: var(--t-xs);
+  color: var(--ink-faint);
+}
 
 /* --------------------------------------------------------------------------
    12. Motion

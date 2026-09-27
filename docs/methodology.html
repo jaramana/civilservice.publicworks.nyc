@@ -28,6 +28,7 @@
   <main id="main">
 
     <h1 class="page-title">About the data</h1>
+    <p class="smallprint data-status" id="asof"></p>
 
     <div class="prose">
       <p>
@@ -35,7 +36,7 @@
         publishes, plus pages from the Department of Citywide Administrative
         Services (DCAS), the agency that runs civil service exams. No numbers
         on this site are estimated or guessed. If a field is missing, we
-        leave it out. That is why some pages are shorter than others.
+        leave it out.
       </p>
     </div>
 
@@ -45,8 +46,7 @@
         <p>
           <strong>Whether you will be hired.</strong> No published data shows
           how far down a list an agency has reached, or where you personally
-          sit on it. This site has no name search and no list number lookup.
-          That is by choice.
+          sit on it. This site has no name search or list number lookup.
         </p>
         <p>
           <strong>How fast a list moves.</strong> The certification data shows
@@ -65,9 +65,7 @@
         <p>
           <strong>Anything about a person.</strong> The City's own data
           includes candidate names, exact scores, and credit flags. This site
-          never asks for those columns. It never stores them and never
-          publishes them. This is enforced in the code, not just promised
-          here in writing.
+          does not request those columns, store them or publish them.
         </p>
       </div>
     </section>
@@ -82,7 +80,7 @@
           gap rather than presenting a partial year.
         </p>
         <p>
-          <strong>Our data lags the City's own pages.</strong> When DCAS
+          <strong>Open data can lag the City's own pages.</strong> When DCAS
           extends an application period, its web pages update first. The
           open data can take weeks to catch up. On one check, the City's
           pages listed eight open exams, but the open data listed only two.
@@ -121,15 +119,12 @@
           Exam dates are also published as a calendar. Each exam page has a
           button to add that exam to your own calendar, with a reminder
           before it closes. If you want every exam at once,
-          <a href="exams.ics">the whole feed is here</a>. Most people only
-          need one exam at a time, though.
+          <a href="exams.ics">the whole feed is here</a>.
         </p>
         <p>
-          The date shown on every page is the date the City's data says it is
-          current as of. It is not the date this site last ran. Those are two
-          different things. The displayed date comes from the City's data,
-          so it can reveal when the source has stopped updating even if this
-          site continues to refresh.
+          Each page gives two dates. “Current as of” is the City's schedule
+          date; “checked” is when this site last read its sources. A recent
+          check can still contain an older City schedule.
         </p>
       </div>
     </section>
@@ -154,12 +149,11 @@
       can change: confirm on
       <a href="https://www.nyc.gov/examsforjobs">nyc.gov</a> before you rely on one.
     </p>
-    <p class="smallprint" id="asof"></p>
     <p>
       <a href="methodology.html">About the data</a> ·
-      <a href="https://github.com/jaramana/civilservice.publicworks.nyc">Source code</a> ·
-      <a href="https://publicworks.nyc">publicworks.nyc</a>
+      <a href="https://github.com/jaramana/civilservice.publicworks.nyc">Source code</a>
     </p>
+    <p class="portfolio">A <a href="https://publicworks.nyc/">publicworks.nyc</a> project.</p>
   </footer>
 
 <script type="module" src="js/methodology.js"></script>

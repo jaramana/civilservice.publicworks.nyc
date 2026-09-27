@@ -166,8 +166,8 @@ export function tag(status) {
    time, so it stays honest even if the refresh workflow keeps running while
    DCAS stops publishing.
 
-   The date is provenance: it applies to the whole site, it is the same on
-   every page, and it sits with the other provenance in the footer.
+   The date is provenance: it applies to the whole site and appears below the
+   page title, where readers can see it before using an exam date.
 
    There is no conditional warning banner any more. It watched datasets that
    carry no application dates, so its age was not evidence about the thing it
