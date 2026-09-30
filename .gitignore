@@ -5,3 +5,6 @@ __pycache__/
 .venv/
 civilservice-project-prompt.md
 working-with-claude_jaramana.md
+
+# Local editor and preview settings
+.claude/

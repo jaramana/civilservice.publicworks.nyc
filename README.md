@@ -43,8 +43,16 @@ source columns disappear or a dataset is unexpectedly small. Every page displays
 the source's own “current as of” date, which is different from the build date.
 Check the Actions history if refreshes appear to have stopped.
 
-The Python pipeline starts at `run.py`. Dataset IDs, required columns and
-validation thresholds are in `config.py`.
+To run it locally, install the dependencies and start the pipeline:
+
+```sh
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
+.venv/bin/python run.py
+```
+
+`run.py --offline` rebuilds from `data-raw/` without touching the network.
+Dataset IDs, required columns and validation thresholds are in `config.py`.
 
 ## Tools
 
