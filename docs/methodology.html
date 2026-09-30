@@ -4,198 +4,28 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>About | NYC Civil Service Exams</title>
-<meta name="description" content="Why this site exists, how it is built, and how to read its published data.">
+<meta name="robots" content="noindex">
+<!-- This file used to hold About and the data pages together. About is
+     about.html and the data is data.html. The stub stays because links to
+     methodology.html are already out in the world. -->
+<link rel="canonical" href="about.html">
+<noscript><meta http-equiv="refresh" content="0; url=about.html"></noscript>
+<script>
+  (function () {
+    var moved = {
+      '#sources': 'data.html#sources', '#dictionary': 'data.html#downloads'
+    };
+    location.replace(moved[location.hash] || 'about.html');
+  })();
+</script>
 <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-<a class="skip" href="#main">Skip to the detail</a>
-
 <div class="sheet">
-
-  <header class="masthead">
-    <p class="wordmark"><a href="index.html">NYC Civil Service Exams</a></p>
-    <p class="tagline">
-      Which exams are open, which are coming, and what the job pays.
-    </p>
-    <nav class="nav" aria-label="Main">
-      <a href="index.html">Exams</a>
-      <a href="titles.html">Job titles</a>
-      <a href="how-to-apply.html">How to apply</a>
-      <a href="methodology.html">About</a>
-    </nav>
-  </header>
-
   <main id="main">
-
-    <h1 class="page-title">About</h1>
-    <p class="smallprint data-status" id="asof"></p>
-
-    <section class="section">
-      <h2>Why</h2>
-      <div class="prose"><p>The City publishes exam schedules, civil service
-      lists and title salaries separately. This site brings them together so
-      readers can check application periods and published pay in one place.</p></div>
-    </section>
-
-    <section class="section">
-      <h2>Scope</h2>
-      <div class="prose"><p>The site shows published exam dates, active lists
-      and title salaries. Open, coming-soon and closed labels are calculated
-      from application dates. No numbers are estimated. Missing fields are
-      left out. Confirm a date on <a href="https://www.nyc.gov/examsforjobs">NYC.gov</a>
-      before relying on it.</p></div>
-    </section>
-
-    <section class="section">
-      <h2>Built</h2>
-      <div class="prose"><p>Python, pandas and requests prepare the data and
-      calendar files. The website uses static HTML, CSS and JavaScript, served
-      from GitHub Pages.</p></div>
-    </section>
-
-    <section class="section">
-      <h2>Independence</h2>
-      <div class="prose"><p>No agency reviewed this site.</p></div>
-    </section>
-
-    <section class="section">
-      <h2>Credits</h2>
-      <div class="prose"><p>Data from NYC Open Data and the Department of
-      Citywide Administrative Services (DCAS) exam pages. Median pay context
-      comes from <a href="https://paygap.publicworks.nyc/">The Pay Gap</a>.
-      Claude was used in development.</p></div>
-    </section>
-
-    <section class="section">
-      <h2>Reuse</h2>
-      <div class="prose"><p>Code is BSD 3-Clause licensed. Generated data and
-      calendar files can be reused with attribution; NYC Open Data and DCAS
-      source material retain their own terms.</p></div>
-    </section>
-
-    <section class="section">
-      <h2>Data limits</h2>
-      <div class="prose">
-        <p>
-          <strong>Whether you will be hired.</strong> No published data shows
-          how far down a list an agency has reached, or where you personally
-          sit on it. This site has no name search or list number lookup.
-        </p>
-        <p>
-          <strong>How fast a list moves.</strong> The certification data shows
-          that a list was used. It does not show how far down the list an
-          agency went. Some titles get certified hundreds of times, because
-          each job posting pulls just a few names. Uniformed titles get
-          certified only a few times, in large batches instead. A high count
-          means a title is hired often. It does not mean the list moves fast.
-        </p>
-        <p>
-          <strong>What you would earn.</strong> A title's salary range is what
-          the City is allowed to pay, across every level of that job. Where we
-          show a median instead, that is a different number from a different
-          source. It describes what people currently in the job actually earn.
-        </p>
-        <p>
-          <strong>Anything about a person.</strong> The City's own data
-          includes candidate names, exact scores, and credit flags. This site
-          does not request those columns, store them or publish them.
-        </p>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Known data gaps</h2>
-      <div class="prose">
-        <p>
-          <strong>A missing year.</strong> No exam here has an application
-          period between July 2024 and June 2025. The City never published
-          that year's schedule as open data. The archive begins after that
-          gap rather than presenting a partial year.
-        </p>
-        <p>
-          <strong>Open data can lag the City's own pages.</strong> When DCAS
-          extends an application period, its web pages update first. The
-          open data can take weeks to catch up. On one check, the City's
-          pages listed eight open exams, but the open data listed only two.
-          So this site reads both sources every day, and lets the City's own
-          pages win when the two disagree.
-        </p>
-        <p>
-          <strong>Cut-off names.</strong> The City's title catalog cuts every
-          name at 30 characters. About half of all titles hit that limit.
-          Where an exam or a list spells a title out in full, we show that
-          fuller spelling instead.
-        </p>
-        <p>
-          <strong>Reused exam numbers.</strong> The City reuses exam numbers
-          about every ten years. So any history shown for an exam only
-          covers the years after that specific list started. This keeps an
-          old, unrelated exam's history from being credited to a new one.
-        </p>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Sources <span class="count" id="sources-count"></span></h2>
-      <dl class="facts" id="sources"></dl>
-    </section>
-
-    <section class="section">
-      <h2>Updates</h2>
-      <div class="prose">
-        <p id="refresh-line">
-          A scheduled job runs the pipeline once a day. It rebuilds the files
-          this site reads, and it commits only when something actually
-          changed.
-        </p>
-        <p>
-          Exam dates are also published as a calendar. Each exam page has a
-          button to add that exam to your own calendar, with a reminder
-          before it closes. If you want every exam at once,
-          <a href="exams.ics">the whole feed is here</a>.
-        </p>
-        <p>
-          Each page gives two dates. “Current as of” is the City's schedule
-          date; “checked” is when this site last read its sources. A recent
-          check can still contain an older City schedule.
-        </p>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Field guide</h2>
-      <p class="note">
-        What each field in the data means. This list comes straight from the
-        pipeline, so it cannot drift from what the site actually publishes.
-      </p>
-      <dl class="facts" id="dictionary"></dl>
-    </section>
-
-    <section class="section">
-      <h2>Contact</h2>
-      <div class="prose"><p>If you find an error,
-      <a href="https://github.com/jaramana/civilservice.publicworks.nyc/issues">open an issue</a>.</p></div>
-    </section>
-
+    <h1 class="page-title">This page has moved</h1>
+    <p>See <a href="about.html">About</a> or <a href="data.html">Data</a>.</p>
   </main>
-
 </div>
-
-  <footer class="foot">
-    <p class="disclaimer">
-      <strong>This is not an official product.</strong> It is an independent
-      initiative, not affiliated with, endorsed by, or produced by
-      <a href="https://www.nyc.gov/examsforjobs">the Department of Citywide
-      Administrative Services</a> or the City of New York. Please refer to
-      them for authoritative information.
-    </p>
-    <p>
-      <a href="methodology.html">About</a> ·
-      <a href="https://github.com/jaramana/civilservice.publicworks.nyc">Source code</a>
-    </p>
-    <p class="portfolio">A <a href="https://publicworks.nyc/">publicworks.nyc</a> project.</p>
-  </footer>
-
-<script type="module" src="js/methodology.js"></script>
 </body>
 </html>

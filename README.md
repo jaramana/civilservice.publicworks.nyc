@@ -30,7 +30,7 @@ exam is open, coming soon or closed, and what a job title pays.
   requirements. Calendar files give reminders on a subscriber's device without
   collecting an email address.
 
-The [About page](https://civilservice.publicworks.nyc/methodology.html)
+The [Data page](https://civilservice.publicworks.nyc/data.html)
 defines the fields and limits. Confirm an exam date on
 [NYC.gov](https://www.nyc.gov/examsforjobs) before relying on it.
 

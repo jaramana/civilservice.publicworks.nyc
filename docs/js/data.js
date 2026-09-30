@@ -1,8 +1,8 @@
 /* ==========================================================================
-   About page.
+   Data page.
 
-   The prose on this page is hand-written, but the source list and the field
-   dictionary are drawn from the data files themselves. A page that
+   The prose on this page is hand-written, but the source list and the column
+   definitions are drawn from the data files themselves. A page that
    is maintained by hand goes stale quietly, and a stale page is
    worse than none: it describes a site that no longer exists.
    ========================================================================== */
@@ -10,7 +10,7 @@
 import { load, el, clear, fmtDate, freshness, markNav, failure } from "./common.js";
 
 function renderSources(meta) {
-  const dl = document.getElementById("sources");
+  const dl = document.getElementById("source-list");
   clear(dl);
 
   meta.sources.forEach((s) => {
@@ -99,10 +99,9 @@ async function main() {
       // described "the front page looks N days ahead" would describe a
       // behavior the page no longer has.
       document.getElementById("refresh-line").textContent =
-        `A scheduled job runs the pipeline once a day. It rebuilds the files ` +
-        `this site reads, and it commits only when something actually ` +
-        `changed. The archive on this site starts at ` +
-        `${fmtDate(windows.archive_floor, { alwaysYear: true })}.`;
+        `The job rebuilds the files this site reads and the calendar feed, ` +
+        `and it commits only when something changed. The archive on this ` +
+        `site starts at ${fmtDate(windows.archive_floor, { alwaysYear: true })}.`;
     }
   } catch (err) {
     failure(host, err);

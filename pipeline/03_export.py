@@ -11,7 +11,7 @@ Files written:
   exams.json       every exam we publish, with its status today
   lists.json       every established Civil Service List, with certification history
   titles.json      every civil service title in the catalog, exam and list attached
-  dictionary.json  what every published field means, drives the methodology page
+  dictionary.json  what every published field means, drives the Data page
 
 There is deliberately no per-candidate score distribution here. An earlier
 build published one so a visitor could enter an exam number and their own list
@@ -122,7 +122,7 @@ def export_lists(lists):
     # A handful of lists report certification deeper than their own highest
     # list number even after the recycled-number fix, because a single
     # certification can draw on more than one list. Cap the display and count
-    # them so the methodology page can say how many.
+    # them so the Data page can say how many.
     odd = int((df.depth_known & (df.deepest_list_no > df.list_no_max)).sum())
     df.loc[df.depth_known & (df.deepest_list_no > df.list_no_max), "depth_known"] = False
     c.log(f"{int(df.depth_known.sum()):,} lists report a usable certification depth; "
@@ -404,7 +404,7 @@ def export_meta(exams, lists, published_exams, catalog):
 
 def export_dictionary():
     """What every published field means, in DCAS's own words where DCAS has
-    words for it. The methodology page renders this, so the definitions on the
+    words for it. The Data page renders this, so the definitions on the
     site cannot drift from the definitions in the pipeline."""
     c.stage("dictionary.json")
     payload = {

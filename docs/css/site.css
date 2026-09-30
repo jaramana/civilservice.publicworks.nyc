@@ -699,3 +699,41 @@ input[type="search"]:focus, select:focus { border-color: var(--focus); }
   .nav, .controls, .btn-row { display: none; }
   a { color: #000; }
 }
+
+/* ---- Data page -------------------------------------------------------
+   Downloads, the columns disclosure and the process list. The same three
+   blocks appear on every Public Works Data page; see alignment.md. */
+.lead { font-size: var(--t-lg); color: var(--ink-soft); max-width: var(--measure); margin: 0 0 1rem; }
+.downloads {
+  display: grid; gap: 1rem; margin: 1.2rem 0; padding: 0;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+}
+.download {
+  display: block; background: var(--paper);
+  border: 1px solid var(--rule-hair); border-radius: 8px; padding: 0.9rem 1.1rem;
+  text-decoration: none; color: inherit;
+  transition: border-color 0.15s ease;
+}
+.download:hover { border-color: var(--accent); }
+.download h3 { margin: 0 0 0.25rem; font-size: var(--t-base); }
+.download p { margin: 0; font-size: var(--t-sm); color: var(--ink-soft); max-width: none; }
+.columns { margin: 1rem 0 1.5rem; }
+.columns > summary { cursor: pointer; font-weight: 600; }
+.columns[open] > summary { margin-bottom: 0.75rem; }
+.data-note { font-size: var(--t-sm); color: var(--ink-faint); margin-top: 0.75rem; max-width: var(--measure); }
+
+.process { list-style: none; margin: 1rem 0 0; padding: 0; counter-reset: step; max-width: var(--measure); }
+.process > li { position: relative; counter-increment: step; padding: 0 0 1.25rem 2.6rem; }
+.process > li::before {
+  content: counter(step); position: absolute; left: 0; top: 0;
+  width: 1.6rem; height: 1.6rem; border-radius: 50%;
+  display: grid; place-items: center;
+  background: var(--accent); color: var(--paper);
+  font-size: var(--t-xs); font-weight: 700;
+}
+.process > li:not(:last-child)::after {
+  content: ""; position: absolute; left: 0.8rem; top: 1.9rem; bottom: 0.25rem;
+  border-left: 2px solid var(--rule-hair);
+}
+.process h3 { margin: 0 0 0.2rem; font-size: var(--t-base); }
+.process p { margin: 0 0 0.5rem; color: var(--ink-soft); }
