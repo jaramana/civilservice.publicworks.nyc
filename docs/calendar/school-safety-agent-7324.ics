@@ -20,10 +20,11 @@ DTSTART;VALUE=DATE:20261007
 DTEND;VALUE=DATE:20261008
 SUMMARY:Applications open: School Safety Agent (Exam 7324)
 DESCRIPTION:Applications open for School Safety Agent\, Exam 7324.\nApplica
- tion period: 2026-10-07 to 2026-10-27.\nApply through OASys: https://www.n
- yc.gov/examsforjobs\nExam details: https://civilservice.publicworks.nyc/ex
- am.html?exam=7324\nDates come from DCAS and can be extended. Confirm on ny
- c.gov before relying on this.
+ tion period: 2026-10-07 to 2026-11-25.\nApply through OASys: https://www.n
+ yc.gov/examsforjobs\nNotice of Examination: https://www.nyc.gov/assets/dca
+ s/downloads/pdf/noes/20277324000.pdf\nExam details: https://civilservice.p
+ ublicworks.nyc/exam.html?exam=7324\nDates come from DCAS and can be extend
+ ed. Confirm on nyc.gov before relying on this.
 URL:https://civilservice.publicworks.nyc/exam.html?exam=7324
 CATEGORIES:NYC Civil Service Exams
 SEQUENCE:2394
@@ -33,14 +34,15 @@ END:VEVENT
 BEGIN:VEVENT
 UID:exam-7324-2027-close@civilservice.publicworks.nyc
 DTSTAMP:20260722T000000Z
-DTSTART;VALUE=DATE:20261027
-DTEND;VALUE=DATE:20261028
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
 SUMMARY:Last day to apply: School Safety Agent (Exam 7324)
 DESCRIPTION:Today is the last day to apply for School Safety Agent\, Exam 7
- 324.\nApplication period: 2026-10-07 to 2026-10-27.\nApply through OASys: 
- https://www.nyc.gov/examsforjobs\nExam details: https://civilservice.publi
- cworks.nyc/exam.html?exam=7324\nDates come from DCAS and can be extended. 
- Confirm on nyc.gov before relying on this.
+ 324.\nApplication period: 2026-10-07 to 2026-11-25.\nApply through OASys: 
+ https://www.nyc.gov/examsforjobs\nNotice of Examination: https://www.nyc.g
+ ov/assets/dcas/downloads/pdf/noes/20277324000.pdf\nExam details: https://c
+ ivilservice.publicworks.nyc/exam.html?exam=7324\nDates come from DCAS and 
+ can be extended. Confirm on nyc.gov before relying on this.
 URL:https://civilservice.publicworks.nyc/exam.html?exam=7324
 CATEGORIES:NYC Civil Service Exams
 SEQUENCE:2394
