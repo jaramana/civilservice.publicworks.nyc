@@ -39,14 +39,12 @@ export function parseDate(iso) {
   return new Date(y, m - 1, d);
 }
 
-const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
-                "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const MONTHS = ["January", "February", "March", "April", "May", "June", "July",
+                "August", "September", "October", "November", "December"];
 
-/* One format for a date, everywhere, year always included.
-   It used to drop the year when it matched the current one, which meant a
-   single column showed "Aug 7" on one row and "Jun 2, 2027" on the next. A
-   field gets one format, and exam schedules routinely span two fiscal years,
-   so the year is the part that cannot be dropped.
+/* One format for a date, everywhere, year always included: "9 October 2026",
+   as across the suite. Exam schedules routinely span two fiscal years, so the
+   year is never dropped.
 
    The opts argument is kept, and ignored, so the call sites that pass
    { alwaysYear: true } still read correctly rather than looking like they
@@ -54,12 +52,11 @@ const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
 export function fmtDate(iso) {
   if (!iso) return "";
   const d = parseDate(iso);
-  return `${MONTHS[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+  return `${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`;
 }
 
-/* Both ends written in full. Collapsing a same-year range to "Jun 15 to Aug 7,
-   2026" would reintroduce the thing above: two renderings of one field
-   depending on the data. */
+/* Both ends written in full. Collapsing a same-year range to "15 June to
+   7 August 2026" would give one field two renderings depending on the data. */
 export function fmtRange(startIso, endIso) {
   if (!startIso) return fmtDate(endIso);
   if (!endIso) return fmtDate(startIso);
