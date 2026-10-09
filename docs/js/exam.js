@@ -209,6 +209,8 @@ async function main() {
     whatNext();
   } catch (err) {
     failure(host, err);
+  } finally {
+    host.classList.remove("is-loading");
   }
 }
 

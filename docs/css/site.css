@@ -450,6 +450,8 @@ h1.page-title {
   padding: 0;
   min-width: 0;
 }
+/* The two filter menus hold their width beside the search box. */
+.field-narrow { flex: 0 1 17rem; }
 
 /* Scoped to the field's own label, not to labels nested inside it. The
    checkbox labels in a menu are values, not field names, and were picking up
@@ -688,6 +690,21 @@ input[type="search"]:focus, select:focus { border-color: var(--focus); }
     transition-duration: 0.01ms !important;
   }
 }
+
+/* --------------------------------------------------------------------------
+   Stable first paint
+   -------------------------------------------------------------------------- */
+
+/* Lines that script fills keep their filled height from the first paint, so
+   the text under them does not jump when they fill. The heights are what each
+   one measures once filled. The footer starts below the fold, so a page filling
+   in does not shove it either, and a page whose body is all data shows its
+   head at once and its sections when the data has drawn. */
+@media screen { main { min-height: 100vh; } }
+#asof:empty { min-height: 19.7px; }
+@media (max-width: 32.75rem) { #asof:empty { min-height: 39.3px; } }
+#exam-no:empty, #title-code:empty { min-height: 19.4px; }
+main.is-loading > section { display: none; }
 
 /* Print. The page is already a sheet of paper, so this is mostly getting the
    board and the navigation out of the way. */

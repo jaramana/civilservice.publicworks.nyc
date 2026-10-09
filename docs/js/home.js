@@ -322,6 +322,8 @@ async function main() {
     sync();
   } catch (err) {
     failure(host, err);
+  } finally {
+    host.classList.remove("is-loading");
   }
 }
 

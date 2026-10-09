@@ -191,6 +191,8 @@ async function main() {
     renderList(t);
   } catch (err) {
     failure(host, err);
+  } finally {
+    host.classList.remove("is-loading");
   }
 }
 

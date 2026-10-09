@@ -28,7 +28,7 @@
     </nav>
   </header>
 
-  <main id="main">
+  <main id="main" class="is-loading">
 
 
     <!-- One rule, and it fits in a sentence: the filters pick which values are
@@ -39,6 +39,9 @@
 
     <h1 class="page-title">Exams</h1>
     <p class="smallprint data-status" id="asof"></p>
+    <noscript><p class="empty"><strong>This page needs JavaScript.</strong> It
+    draws each exam from the published data in the browser. The
+    <a href="data.html">Data page</a> has the full download.</p></noscript>
 
     <div class="controls">
       <div class="field">
@@ -60,7 +63,7 @@
 
            Both menus work the same way: every box is a value you want kept.
            Unticking all of them asks for nothing, and the page says so. -->
-      <div class="field" style="flex: 0 1 17rem;">
+      <div class="field field-narrow">
         <span class="fieldname" id="show-name">Status</span>
         <details class="menu" id="show-menu">
           <summary aria-describedby="show-name"><span id="show-summary"></span></summary>
@@ -75,7 +78,7 @@
 
       <!-- Values come from the data, so a type that turns up in a future
            schedule cannot end up unreachable behind a hardcoded list. -->
-      <div class="field" style="flex: 0 1 17rem;">
+      <div class="field field-narrow">
         <span class="fieldname" id="type-name">Who can apply</span>
         <details class="menu" id="type-menu">
           <summary aria-describedby="type-name"><span id="type-summary"></span></summary>
