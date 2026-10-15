@@ -144,48 +144,6 @@ DESCRIPTION:Special Officer (NYC H+H) (Exam 7329) closes in 3 days. Apply a
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:exam-7314-2027-open@civilservice.publicworks.nyc
-DTSTAMP:20260722T000000Z
-DTSTART;VALUE=DATE:20261001
-DTEND;VALUE=DATE:20261002
-SUMMARY:Applications open: Police Officer (Exam 7314)
-DESCRIPTION:Applications open for Police Officer\, Exam 7314.\nApplication 
- period: 2026-10-01 to 2026-10-14.\nApply through OASys: https://www.nyc.go
- v/examsforjobs\nNotice of Examination: https://www.nyc.gov/assets/dcas/dow
- nloads/pdf/noes/20277314000.pdf\nExam details: https://civilservice.public
- works.nyc/exam.html?exam=7314\nDates come from DCAS and can be extended. C
- onfirm on nyc.gov before relying on this.
-URL:https://civilservice.publicworks.nyc/exam.html?exam=7314
-CATEGORIES:NYC Civil Service Exams
-SEQUENCE:2394
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:exam-7314-2027-close@civilservice.publicworks.nyc
-DTSTAMP:20260722T000000Z
-DTSTART;VALUE=DATE:20261014
-DTEND;VALUE=DATE:20261015
-SUMMARY:Last day to apply: Police Officer (Exam 7314)
-DESCRIPTION:Today is the last day to apply for Police Officer\, Exam 7314.\
- nApplication period: 2026-10-01 to 2026-10-14.\nApply through OASys: https
- ://www.nyc.gov/examsforjobs\nNotice of Examination: https://www.nyc.gov/as
- sets/dcas/downloads/pdf/noes/20277314000.pdf\nExam details: https://civils
- ervice.publicworks.nyc/exam.html?exam=7314\nDates come from DCAS and can b
- e extended. Confirm on nyc.gov before relying on this.
-URL:https://civilservice.publicworks.nyc/exam.html?exam=7314
-CATEGORIES:NYC Civil Service Exams
-SEQUENCE:2394
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-P3D
-DESCRIPTION:Police Officer (Exam 7314) closes in 3 days. Apply at https://w
- ww.nyc.gov/examsforjobs
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:exam-7010-2027-open@civilservice.publicworks.nyc
 DTSTAMP:20260722T000000Z
 DTSTART;VALUE=DATE:20261007
