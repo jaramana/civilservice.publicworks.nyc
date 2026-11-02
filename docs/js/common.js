@@ -225,6 +225,34 @@ export function markNav() {
   });
 }
 
+/* On a phone the nav folds behind a menu button. Escape, a tap outside the
+   masthead, a tap on a link, or a window wide enough to show the nav folds it
+   again. Open, the page underneath stops scrolling. Every page imports this
+   module, so the menu is wired here once, before any data loads. */
+function menu() {
+  const head = document.querySelector(".masthead");
+  const button = head && head.querySelector(".nav-toggle");
+  if (!button) return;
+  const nav = head.querySelector(".nav");
+  const wide = window.matchMedia("(min-width: 40.01rem)");
+  const set = (open) => {
+    if (open) nav.style.setProperty("--sheet-top", `${head.getBoundingClientRect().bottom}px`);
+    button.setAttribute("aria-expanded", String(open));
+    head.classList.toggle("menu-open", open);
+    document.documentElement.classList.toggle("menu-locked", open);
+  };
+  button.addEventListener("click", () => set(button.getAttribute("aria-expanded") !== "true"));
+  head.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && head.classList.contains("menu-open")) { set(false); button.focus(); }
+  });
+  document.addEventListener("click", (e) => {
+    if (head.classList.contains("menu-open") && !head.contains(e.target)) set(false);
+  });
+  nav.addEventListener("click", (e) => { if (e.target.closest("a")) set(false); });
+  wide.addEventListener("change", () => { if (wide.matches) set(false); });
+}
+menu();
+
 /* A page that fails to load its data should say so rather than sit empty. */
 export function failure(node, err) {
   clear(node);
