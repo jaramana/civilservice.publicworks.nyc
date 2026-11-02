@@ -40,7 +40,7 @@ A [daily GitHub workflow](.github/workflows/refresh.yml) rebuilds the data and
 calendar files and commits only when they change. The pipeline uses live DCAS
 dates when they differ from open data; it fails if those pages cannot be read,
 source columns disappear or a dataset is unexpectedly small. Every page displays
-the source's own “current as of” date, which is different from the build date.
+the source's own "current as of" date, which is different from the build date.
 Check the Actions history if refreshes appear to have stopped.
 
 To run it locally, install the dependencies and start the pipeline:
@@ -54,6 +54,14 @@ python3 -m venv .venv
 `run.py --offline` rebuilds from `data-raw/` without touching the network.
 Dataset IDs, required columns and validation thresholds are in `config.py`.
 
+To preview the site, which is all of `docs/` with no build step:
+
+```sh
+python3 -m http.server 8123 --directory docs
+```
+
+Open http://localhost:8123.
+
 ## Tools
 
 Data pipeline: Python, `pandas` and `requests` prepare the data and calendar
@@ -62,6 +70,6 @@ Claude was used in development.
 
 ## License and reuse
 
-Code is [BSD 3-Clause licensed](LICENSE). Generated data and calendar files can be
-reused with attribution. NYC Open Data and DCAS source material retain their own
-terms; salary context comes from The Pay Gap.
+Code is [BSD 3-Clause licensed](LICENSE). Compiled data and calendar files can be
+reused with attribution; NYC Open Data and DCAS source material retain their own
+terms. Carry the City's "current as of" date when republishing a figure.

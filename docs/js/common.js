@@ -24,7 +24,7 @@ export async function load(name) {
     _cache.set(name, fetch(DATA + name).then((r) => {
       if (!r.ok) throw new Error(`${name}: ${r.status}`);
       return r.json();
-    }));
+    }).then((json) => (name === "exams.json" ? json.map(withLiveStatus) : json)));
   }
   return _cache.get(name);
 }
@@ -64,10 +64,14 @@ export function fmtRange(startIso, endIso) {
 }
 
 /* "today" is a function rather than a constant so that a tab left open
-   overnight does not keep counting from yesterday. */
+   overnight does not keep counting from yesterday. It is the date in New
+   York, where filing periods are set, whatever the reader's time zone. */
 export function today() {
-  const n = new Date();
-  return new Date(n.getFullYear(), n.getMonth(), n.getDate());
+  return parseDate(todayIso());
+}
+
+function todayIso() {
+  return new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(new Date());
 }
 
 export function daysBetween(iso) {
@@ -147,6 +151,21 @@ export const EXAM_TYPE = {
   qie: "Provisional",
 };
 
+/* The pipeline stamps each exam's status on the day it runs. A snapshot read
+   days later would still call a closed exam open, so the date-based statuses
+   are worked out again here from the filing dates, with the same rule as
+   derive_status() in pipeline/02_prepare.py. Canceled and postponed exams
+   keep the status they were published with. */
+function withLiveStatus(exam) {
+  if (!(exam.status in STATUS)) return exam;
+  const now = todayIso();
+  let status = exam.status;
+  if (exam.start && exam.start > now) status = "upcoming";
+  if (exam.start && exam.end && exam.start <= now && exam.end >= now) status = "accepting";
+  if (exam.end && exam.end < now) status = "closed";
+  return status === exam.status ? exam : { ...exam, status };
+}
+
 export function typeLabel(type) {
   return EXAM_TYPE[type] || type;
 }
@@ -182,6 +201,16 @@ export async function freshness() {
     line.textContent =
       `Exam schedule current as of ${fmtDate(asof, { alwaysYear: true })}, ` +
       `checked ${fmtDate(meta.generated_at, { alwaysYear: true })}.`;
+
+    /* The check is meant to run daily. When it has not run for longer than
+       a missed day or two, say so, because the exam list may be missing
+       anything DCAS has announced since. */
+    const age = -daysBetween(meta.generated_at);
+    if (age > 2) {
+      line.append(" ", el("strong", {
+        text: `That was ${age} days ago, so confirm dates on the DCAS notice before you apply.`,
+      }));
+    }
   }
 
   return meta;

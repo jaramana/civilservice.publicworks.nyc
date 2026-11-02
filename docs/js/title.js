@@ -180,7 +180,7 @@ async function main() {
       return;
     }
 
-    document.title = `${t.title} | NYC Civil Service Exams`;
+    document.title = `${t.title} · NYC Civil Service Exams`;
     document.getElementById("title-name").textContent =
       t.name_truncated ? t.title + "…" : t.title;
     document.getElementById("title-code").textContent = `Title code ${t.code}`;
