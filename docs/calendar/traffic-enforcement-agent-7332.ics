@@ -20,10 +20,11 @@ DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:Applications open: Traffic Enforcement Agent (Exam 7332)
 DESCRIPTION:Applications open for Traffic Enforcement Agent\, Exam 7332.\nA
- pplication period: 2026-11-05 to 2026-11-25.\nApply through OASys: https:/
- /www.nyc.gov/examsforjobs\nExam details: https://civilservice.publicworks.
- nyc/exam.html?exam=7332\nDates come from DCAS and can be extended. Confirm
-  on nyc.gov before relying on this.
+ pplication period: 2026-11-05 to 2026-12-22.\nApply through OASys: https:/
+ /www.nyc.gov/examsforjobs\nNotice of Examination: https://www.nyc.gov/asse
+ ts/dcas/downloads/pdf/noes/20277332000.pdf\nExam details: https://civilser
+ vice.publicworks.nyc/exam.html?exam=7332\nDates come from DCAS and can be 
+ extended. Confirm on nyc.gov before relying on this.
 URL:https://civilservice.publicworks.nyc/exam.html?exam=7332
 CATEGORIES:NYC Civil Service Exams
 SEQUENCE:2394
@@ -33,14 +34,15 @@ END:VEVENT
 BEGIN:VEVENT
 UID:exam-7332-2027-close@civilservice.publicworks.nyc
 DTSTAMP:20260722T000000Z
-DTSTART;VALUE=DATE:20261125
-DTEND;VALUE=DATE:20261126
+DTSTART;VALUE=DATE:20261222
+DTEND;VALUE=DATE:20261223
 SUMMARY:Last day to apply: Traffic Enforcement Agent (Exam 7332)
 DESCRIPTION:Today is the last day to apply for Traffic Enforcement Agent\, 
- Exam 7332.\nApplication period: 2026-11-05 to 2026-11-25.\nApply through O
- ASys: https://www.nyc.gov/examsforjobs\nExam details: https://civilservice
- .publicworks.nyc/exam.html?exam=7332\nDates come from DCAS and can be exte
- nded. Confirm on nyc.gov before relying on this.
+ Exam 7332.\nApplication period: 2026-11-05 to 2026-12-22.\nApply through O
+ ASys: https://www.nyc.gov/examsforjobs\nNotice of Examination: https://www
+ .nyc.gov/assets/dcas/downloads/pdf/noes/20277332000.pdf\nExam details: htt
+ ps://civilservice.publicworks.nyc/exam.html?exam=7332\nDates come from DCA
+ S and can be extended. Confirm on nyc.gov before relying on this.
 URL:https://civilservice.publicworks.nyc/exam.html?exam=7332
 CATEGORIES:NYC Civil Service Exams
 SEQUENCE:2394
